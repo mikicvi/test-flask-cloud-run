@@ -19,6 +19,9 @@ def route():
 def ctb():
     return "Hello Cloud Tech for Business, this is Dockerised Flask"
 
+@app.route("/gcb")
+def gcb():
+    return "Heya from google cloud build, congrats, its successful."
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port='8080')
